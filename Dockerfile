@@ -71,6 +71,8 @@ COPY --from=builder /app/api ./api
 
 # Static data files used by handlers at runtime
 COPY --from=builder /app/data ./data
+COPY --from=builder /app/scripts ./scripts
+COPY --from=builder /app/shared ./shared
 
 # Built frontend static files
 COPY --from=builder /app/dist /usr/share/nginx/html
@@ -79,6 +81,8 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 COPY docker/nginx.conf /etc/nginx/nginx.conf.template
 COPY docker/supervisord.conf /etc/supervisor/conf.d/worldmonitor.conf
 COPY docker/entrypoint.sh /app/entrypoint.sh
+COPY docker/local-redis-rest.cjs /app/local-redis-rest.cjs
+COPY docker/self-host-seeder.cjs /app/self-host-seeder.cjs
 RUN chmod +x /app/entrypoint.sh
 
 # Ensure writable dirs for non-root

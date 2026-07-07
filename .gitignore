@@ -11,6 +11,7 @@ public/blog/
 .playwright-mcp/
 *-network.txt
 .vercel
+.tools/
 api/\[domain\]/v1/\[rpc\].js
 api/\[\[...path\]\].js
 .claude/
@@ -85,3 +86,5 @@ tmp/
 docs/plans/
 docs/brainstorms/
 playground-pricing.html
+
+.vercel
