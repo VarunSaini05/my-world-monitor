@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: worldmonitor-app
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: node server.mjs
+    plan: pro
+    # Adjust these based on your needs:
+    # - Starter: ~$7/month
+    # - Standard: ~$12/month  
+    # - Pro: ~$12/month with fixed IP/region
+
+    # Environment variables (set via Render dashboard):
+    # VITE_API_BASE: https://your-api-domain.com
+    # NODE_ENV: production
+    
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+    # Add any cron jobs if needed
+    # crons:
+    #   - id: cleanup
+    #     command: node scripts/cleanup.mjs
+    #     schedule: "0 2 * * *"  # 2 AM daily
+
+    # Health check
+    healthCheckPath: /
+
+    # Redirect www to non-www (optional)
+    # redirects:
+    #   - from: www.yourdomain.com
+    #     to: yourdomain.com
+    #     permanent: true
