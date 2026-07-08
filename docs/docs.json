@@ -41,7 +41,7 @@
       },
       {
         "label": "GitHub",
-        "href": "https://github.com/koala73/worldmonitor"
+        "href": "https://github.com/VarunSaini05/my-world-monitor"
       }
     ],
     "primary": {
@@ -409,8 +409,7 @@
   },
   "footer": {
     "socials": {
-      "github": "https://github.com/koala73/worldmonitor",
-      "discord": "https://discord.gg/re63kWKxaz",
+      "github": "https://github.com/VarunSaini05/my-world-monitor",
       "x": "https://x.com/worldmonitorai"
     },
     "links": [
@@ -437,10 +436,6 @@
           {
             "label": "GitHub",
             "href": "https://github.com/koala73/worldmonitor"
-          },
-          {
-            "label": "Discord",
-            "href": "https://discord.gg/re63kWKxaz"
           },
           {
             "label": "X",

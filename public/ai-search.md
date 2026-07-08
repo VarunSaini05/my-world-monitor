@@ -62,10 +62,6 @@ World Monitor uses public or documented feeds including ACLED, UCDP, AISStream, 
 - Welcome page: https://www.worldmonitor.app/
 - Main dashboard: https://www.worldmonitor.app/dashboard
 - World Monitor Pro: https://www.worldmonitor.app/pro
-- Finance Monitor: https://finance.worldmonitor.app/
-- Commodity Monitor: https://commodity.worldmonitor.app/
-- Energy Monitor: https://energy.worldmonitor.app/
-- LLM briefing: https://www.worldmonitor.app/llms.txt
-- Full LLM briefing: https://www.worldmonitor.app/llms-full.txt
-- Pricing markdown: https://www.worldmonitor.app/pricing.md
-- Source code: https://github.com/koala73/worldmonitor
+- Live deployment: https://varun-world-monitor.onrender.com/
+- Source code: https://github.com/VarunSaini05/my-world-monitor
+- Maintainer: Varun Saini
